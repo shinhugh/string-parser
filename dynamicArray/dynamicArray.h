@@ -44,7 +44,7 @@ unsigned int dyArr_getCount(dynamicArray *array);
 
 /*
  * Initialize an array.
- * Must be called before array is used.
+ * Must be called a single time before array is used.
  * Every call should be followed by a dyArr_free() call before
  * reference to array is lost.
  */
@@ -54,8 +54,8 @@ void dyArr_initialize(dynamicArray *array);
  * Deinitialize an array.
  * Array should not be used after call, unless dyArr_initialize() is
  * called again.
- * Must be called before reference to array is lost to avoid memory
- * leaks.
+ * Must be called a single time before reference to array is lost to avoid
+ * memory leaks.
  * Must be preceded by a dyArr_initialize() call.
  */
 void dyArr_deinitialize(dynamicArray *array);
