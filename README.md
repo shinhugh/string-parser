@@ -7,9 +7,11 @@ fragments.<br/><br/>
 ## Functions
 
 ### `gen_fragments()`
-Function `gen_fragments()` generates a `dynamicArray` instance on the heap and
-returns a pointer to it. The array contains the strings that were parsed,
-individually distinguished by finding "splitter" characters.<br/>
+Function `gen_fragments()` generates a
+[`dynamicArray`](https://www.github.com/shinhugh)
+instance on the heap and returns a pointer to it. The array contains the
+strings that were parsed, individually distinguished by finding "splitter"
+characters.<br/>
 `gen_fragments()` takes in 4 arguments:
 1. `char *src` - Source string to parse.
 2. `char splitter` - "Splitter" character that signifies the conclusion of a
@@ -23,7 +25,7 @@ null-terminating character; it concludes the parsing and isn't included in any
 fragment.
 
 The returned `dynamicArray` pointer can be navigated using functions inside the
-`dynamicArray` library.
+[`dynamicArray` library](https://www.github.com/shinhugh).
 
 ### `deg_fragments()`
 Function `deg_fragments()` degenerates the `dynamicArray` instance created by a
@@ -50,7 +52,7 @@ When using this library, make sure to have in your C source code:
 ```c
 #include "string_parser.h"
 ```
-`dynamicArray.h` is already included within `string_parser.h`.<br/><br/>
+`dynamicArray.h` is already included by `string_parser.h`.<br/><br/>
 When compiling your code, include `libstring_parser.a` and `libdynamicArray.a`
 as such:
 ```shell
