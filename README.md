@@ -8,7 +8,7 @@ fragments.<br/><br/>
 
 ### `gen_fragments()`
 Function `gen_fragments()` generates a
-[`dynamicArray`](https://www.github.com/shinhugh)
+[`dynamicArray`](https://github.com/shinhugh/dynamicArray)
 instance on the heap and returns a pointer to it. The array contains the
 strings that were parsed, individually distinguished by finding "splitter"
 characters.<br/>
@@ -25,7 +25,7 @@ null-terminating character; it concludes the parsing and isn't included in any
 fragment.
 
 The returned `dynamicArray` pointer can be navigated using functions inside the
-[`dynamicArray` library](https://www.github.com/shinhugh).
+[`dynamicArray` library](https://github.com/shinhugh/dynamicArray).
 
 ### `deg_fragments()`
 Function `deg_fragments()` degenerates the `dynamicArray` instance created by a
@@ -36,7 +36,7 @@ then becomes invalid.<br/>
 ## Build
 
 1. Make sure the
-[`dynamicArray` static library](https://www.github.com/shinhugh)
+[`dynamicArray` static library](https://github.com/shinhugh/dynamicArray)
 exists on your machine. There should be two files: `dynamicArray.h` and
 `libdynamicArray.a`. They may be in any directory.
 2. Clone this repository.
